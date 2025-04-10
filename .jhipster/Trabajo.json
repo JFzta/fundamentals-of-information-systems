@@ -1,0 +1,39 @@
+{
+  "annotations": {
+    "changelogDate": "20250409194753"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "tituloTrabajo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salarioMin",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "salarioMax",
+      "fieldType": "Long"
+    }
+  ],
+  "name": "Trabajo",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityField": "titulo",
+      "otherEntityName": "tarea",
+      "otherEntityRelationshipName": "trabajo",
+      "relationshipName": "tarea",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-many"
+    },
+    {
+      "otherEntityName": "empleado",
+      "relationshipName": "empleado",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}

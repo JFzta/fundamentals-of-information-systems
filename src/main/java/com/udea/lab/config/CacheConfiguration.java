@@ -50,6 +50,18 @@ public class CacheConfiguration {
             createCache(cm, com.udea.lab.domain.User.class.getName());
             createCache(cm, com.udea.lab.domain.Authority.class.getName());
             createCache(cm, com.udea.lab.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.udea.lab.domain.Region.class.getName());
+            createCache(cm, com.udea.lab.domain.Pais.class.getName());
+            createCache(cm, com.udea.lab.domain.Direccion.class.getName());
+            createCache(cm, com.udea.lab.domain.Departamento.class.getName());
+            createCache(cm, com.udea.lab.domain.Departamento.class.getName() + ".empleados");
+            createCache(cm, com.udea.lab.domain.Tarea.class.getName());
+            createCache(cm, com.udea.lab.domain.Tarea.class.getName() + ".trabajos");
+            createCache(cm, com.udea.lab.domain.Empleado.class.getName());
+            createCache(cm, com.udea.lab.domain.Empleado.class.getName() + ".trabajos");
+            createCache(cm, com.udea.lab.domain.Trabajo.class.getName());
+            createCache(cm, com.udea.lab.domain.Trabajo.class.getName() + ".tareas");
+            createCache(cm, com.udea.lab.domain.Contrato.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

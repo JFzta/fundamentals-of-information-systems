@@ -1,0 +1,36 @@
+{
+  "annotations": {
+    "changelogDate": "20250409194749"
+  },
+  "applications": "*",
+  "documentation": "comentario de un parrafo",
+  "fields": [
+    {
+      "fieldName": "calle",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "codigoPostal",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "ciudad",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "provincia",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Direccion",
+  "relationships": [
+    {
+      "otherEntityName": "pais",
+      "relationshipName": "pais",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

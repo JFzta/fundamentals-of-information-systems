@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+    <!--
+        Added the constraints for entity Contrato.
+    -->
+    <changeSet id="20250409194754-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="trabajo_id"
+                                 baseTableName="contrato"
+                                 constraintName="fk_contrato__trabajo_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="trabajo"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="departamento_id"
+                                 baseTableName="contrato"
+                                 constraintName="fk_contrato__departamento_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="departamento"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="empleado_id"
+                                 baseTableName="contrato"
+                                 constraintName="fk_contrato__empleado_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="empleado"
+                                 />
+    </changeSet>
+</databaseChangeLog>

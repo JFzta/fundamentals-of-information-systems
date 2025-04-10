@@ -1,0 +1,45 @@
+{
+  "annotations": {
+    "changelogDate": "20250409194754"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "fechaInicio",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "fechaFin",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "lenguaje",
+      "fieldType": "Idioma",
+      "fieldValues": "ESPANOL,INGLES,PORTUGUES"
+    }
+  ],
+  "name": "Contrato",
+  "pagination": "infinite-scroll",
+  "relationships": [
+    {
+      "otherEntityName": "trabajo",
+      "relationshipName": "trabajo",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "departamento",
+      "relationshipName": "departamento",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "empleado",
+      "relationshipName": "empleado",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

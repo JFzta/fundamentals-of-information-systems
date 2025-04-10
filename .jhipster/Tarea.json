@@ -1,0 +1,28 @@
+{
+  "annotations": {
+    "changelogDate": "20250409194751"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "titulo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "descripcion",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Tarea",
+  "relationships": [
+    {
+      "otherEntityName": "trabajo",
+      "otherEntityRelationshipName": "tarea",
+      "relationshipName": "trabajo",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

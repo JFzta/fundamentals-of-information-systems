@@ -1,0 +1,31 @@
+{
+  "annotations": {
+    "changelogDate": "20250409194750"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "nombreDepartamento",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "name": "Departamento",
+  "relationships": [
+    {
+      "otherEntityName": "direccion",
+      "relationshipName": "direccion",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "empleado",
+      "otherEntityRelationshipName": "departamento",
+      "relationshipName": "empleado",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}
